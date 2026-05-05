@@ -1,0 +1,17 @@
+{
+    "data" : [
+
+        {
+            "emailAddress" : "sapediw118@soppat.com",
+            "password" : "password",
+            "expectedUserName" : "Harpreet Sindhia"
+            
+        },
+
+        {
+            "emailAddress" : "dipibe7483@4heats.com",
+            "password" : "password",
+            "expectedUserName" : "Harry Sindhia"
+        }
+    ]
+}
