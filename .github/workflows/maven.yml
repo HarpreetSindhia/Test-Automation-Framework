@@ -1,4 +1,3 @@
-
 name: Test Automation Workflow
 
 on:
@@ -26,22 +25,22 @@ jobs:
       run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
 
       
-- name: Upload Test Logs
-  if: always()
-  uses: actions/upload-artifact@v3
-  with:
-    name: Test logs
-    path: logs/
+    - name: Upload Test Logs
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: Test logs
+        path: logs/
 
     
-- name: Upload Test Reports
-  if: always()
-  uses: actions/upload-artifact@v3
-  with:
-    name: Test Reports
-    path: report.html
+    - name: Upload Test Reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: Test Reports
+        path: report.html
 
-    -name: Test Execution Status
+    - name: Upload Test Reports
       run: echo "Test Execution Completed"
     
   
