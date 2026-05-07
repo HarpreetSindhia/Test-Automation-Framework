@@ -25,7 +25,7 @@ import com.constants.Browser;
 
 public abstract class BrowserUtility {
 
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	private JavascriptExecutor js;
 
@@ -36,15 +36,17 @@ public abstract class BrowserUtility {
 		return driver.get();
 	}
 
-	public void setDriver(WebDriver driver) {
-		this.driver.set(driver);
+	public void setDriver(WebDriver driverInstance) {
+		
+		driver.set(driverInstance);
+		
 	}
 
-	public BrowserUtility(WebDriver driver)
+	public BrowserUtility(WebDriver driverInstance)
 	{
 		super();
-		this.driver.set(driver);
-		this.js = ((JavascriptExecutor)driver);
+		driver.set(driverInstance);
+		this.js = ((JavascriptExecutor)driverInstance);
 	}
 
 	public BrowserUtility(String browserName)
@@ -174,7 +176,7 @@ public abstract class BrowserUtility {
 		return path;
 	}
 	
-
+	
 	public void quit()
 	{
 		driver.get().quit();

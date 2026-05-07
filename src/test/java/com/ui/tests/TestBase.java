@@ -1,7 +1,9 @@
 package com.ui.tests;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -15,7 +17,7 @@ public class TestBase {
 
 	HomePage homePage;
 	
-	private static Boolean isLambdaTest;
+	private Boolean isLambdaTest;
 	
 	@Parameters({"browser" , "isLambdaTest" , "isHeadless"})
 	
@@ -24,19 +26,27 @@ public class TestBase {
 			
 			@Optional("chrome")	String browser , 
 			@Optional("false") Boolean isLambdaTest , 
-			@Optional("true") Boolean isHeadless , ITestResult result)
+			@Optional("true") Boolean isHeadless ,
+			Method method)
 	{
+		String testName =	method.getName();	
 		
+		this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
+		
+		String browserValue = (browser == null || browser.startsWith("${"))
+	            ? "CHROME"
+	            : browser.trim().toUpperCase();
+		
 		if(isLambdaTest)
 		{
-			lambdaDriver =	LambdaTestUtility.initializeLambdaTestSession(browser, result.getMethod().getMethodName());
+			lambdaDriver =	LambdaTestUtility.initializeLambdaTestSession(browserValue, testName);
 			
 			homePage = new HomePage(lambdaDriver);
 		}
 		else
 		{
-			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()) , true);
+			homePage = new HomePage(Browser.valueOf(browserValue), true);
 		}
 		
 		
@@ -47,7 +57,7 @@ public class TestBase {
 		return homePage;
 	}
 	
-	
+	@AfterMethod(description="Closes the driver session")
 	public void tearDown()
 	{
 		if(isLambdaTest)

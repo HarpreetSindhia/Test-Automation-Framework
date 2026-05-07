@@ -27,7 +27,8 @@ public class ExcelReaderUtility {
 		XSSFSheet xssfSheet;
 		Iterator<Row> rowIterator;
 		
-		File xlsxFile = new File(System.getProperty("user.dir")+"\\testData\\"+ fileName);
+		
+		File xlsxFile = new File(System.getProperty("user.dir")+File.separator+"testData"+File.separator+fileName);
 		XSSFWorkbook xssfWorkbook = null;
 		
 		try {

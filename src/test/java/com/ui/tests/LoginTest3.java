@@ -21,7 +21,7 @@ public class LoginTest3 extends TestBase {
 
 	}
 
-	/*@Test(description = "Verifies if the valid user is able to log in to the application", groups = { "e2e",
+	@Test(description = "Verifies if the valid user is able to log in to the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider",
 			retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 
@@ -40,5 +40,5 @@ public class LoginTest3 extends TestBase {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				user.getExpectedUserName());
 		
-	}*/
+	}
 }

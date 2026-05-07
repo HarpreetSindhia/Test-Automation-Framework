@@ -11,7 +11,7 @@ public class ExtentReportUtility {
 	
 	private static ExtentReports extentReports;
 	
-	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 	
 	public static void setUpSparkReporter(String fileName)
 	{
