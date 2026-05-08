@@ -1,0 +1,39 @@
+2026:05:07 20:57:46 [main] INFO com.ui.listeners.TestListeners Test suite started 
+2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:57:51 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:57:55 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:00 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:06 [main] ERROR com.ui.listeners.TestListeners loginCSVTest Failed 
+2026:05:07 20:58:06 [main] ERROR com.ui.listeners.TestListeners expected [Harpreet5 Sindhia] but found [Harpreet Sindhia] 
+2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:12 [main] INFO com.ui.listeners.TestListeners loginCSVTest Passed 
+2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners loginExcelTest 
+2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:17 [main] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
+2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners loginExcelTest 
+2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:22 [main] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
+2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners loginTest 
+2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:26 [main] INFO com.ui.listeners.TestListeners loginTest Passed 
+2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners loginTest 
+2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:07 20:58:32 [main] INFO com.ui.listeners.TestListeners loginTest Passed 
+2026:05:07 20:58:33 [main] INFO com.ui.listeners.TestListeners Test suite ended 
