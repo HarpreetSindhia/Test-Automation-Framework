@@ -34,19 +34,20 @@ public class TestBase {
 		this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
 		
-		String browserValue = (browser == null || browser.startsWith("${"))
+		/*String browserValue = (browser == null || browser.startsWith("${"))
 	            ? "CHROME"
-	            : browser.trim().toUpperCase();
+	            : browser.trim().toUpperCase();*/
 		
-		if(isLambdaTest)
+		if(isLambdaTest)//Framework will run on cloud Lambda Test
 		{
-			lambdaDriver =	LambdaTestUtility.initializeLambdaTestSession(browserValue, testName);
+			lambdaDriver =	LambdaTestUtility.initializeLambdaTestSession(Browser.valueOf(browser.toUpperCase()), testName);
 			
 			homePage = new HomePage(lambdaDriver);
 		}
 		else
 		{
-			homePage = new HomePage(Browser.valueOf(browserValue), true);
+			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), true);//Framework will run on 
+			// local machine in headless mode
 		}
 		
 		

@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.constants.Browser;
+
 public class LambdaTestUtility {
 
 	public static final String HUB_URL = "https://hub.lambdatest.com/wd/hub";
@@ -17,10 +19,10 @@ public class LambdaTestUtility {
 	
 	private static ThreadLocal<WebDriver> driverLocal = new ThreadLocal<WebDriver>();
 	
-	public static WebDriver initializeLambdaTestSession(String browser , String testName)
+	public static WebDriver initializeLambdaTestSession(Browser browser , String testName)
 	{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", browser);
+        capabilities.setCapability("browserName", browser.name());
         capabilities.setCapability("browserVersion", "latest");
         Map<String, Object> ltOptions = new HashMap<>();
         ltOptions.put("user", "harpreetsindhia999");
