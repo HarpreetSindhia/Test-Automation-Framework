@@ -1,39 +1,62 @@
-2026:05:07 20:57:46 [main] INFO com.ui.listeners.TestListeners Test suite started 
-2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
-2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:57:49 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:57:51 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
-2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
-2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:57:54 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:57:55 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
-2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
-2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:57:58 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:00 [main] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
-2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
-2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:04 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:06 [main] ERROR com.ui.listeners.TestListeners loginCSVTest Failed 
-2026:05:07 20:58:06 [main] ERROR com.ui.listeners.TestListeners expected [Harpreet5 Sindhia] but found [Harpreet Sindhia] 
-2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners loginCSVTest 
-2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:10 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:12 [main] INFO com.ui.listeners.TestListeners loginCSVTest Passed 
-2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners loginExcelTest 
-2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:15 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:17 [main] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
-2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners loginExcelTest 
-2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:20 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:22 [main] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
-2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners loginTest 
-2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:25 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:26 [main] INFO com.ui.listeners.TestListeners loginTest Passed 
-2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners loginTest 
-2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
-2026:05:07 20:58:29 [main] INFO com.ui.listeners.TestListeners [e2e, sanity] 
-2026:05:07 20:58:32 [main] INFO com.ui.listeners.TestListeners loginTest Passed 
-2026:05:07 20:58:33 [main] INFO com.ui.listeners.TestListeners Test suite ended 
+2026:05:21 13:51:59 [main] INFO com.ui.listeners.TestListeners Test suite started 
+2026:05:21 13:52:09 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginExcelTest 
+2026:05:21 13:52:09 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:09 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:10 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:21 13:52:10 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:10 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:15 [TestNG-test=Automation Practice-1] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:21 13:52:16 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
+2026:05:21 13:52:19 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginExcelTest 
+2026:05:21 13:52:19 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:19 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:21 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:21 13:52:21 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:21 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:26 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginExcelTest Passed 
+2026:05:21 13:52:26 [TestNG-test=Automation Practice-1] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:21 13:52:29 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:21 13:52:30 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:30 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:34 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginTest 
+2026:05:21 13:52:34 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:34 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:36 [TestNG-test=Automation Practice-1] WARN com.ui.listeners.TestListeners loginCSVTest Skipped 
+2026:05:21 13:52:37 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginTest Passed 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginTest 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:45 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:52:51 [TestNG-test=Automation Practice-1] ERROR com.ui.listeners.TestListeners loginCSVTest Failed 
+2026:05:21 13:52:51 [TestNG-test=Automation Practice-1] ERROR com.ui.listeners.TestListeners expected [Harpreet5 Sindhia] but found [Harpreet Sindhia] 
+2026:05:21 13:52:52 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners loginTest Passed 
+2026:05:21 13:52:58 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest 
+2026:05:21 13:52:58 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Verifies if the valid user is able to log in to the application 
+2026:05:21 13:52:58 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:53:00 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners invalidLoginCredentials 
+2026:05:21 13:53:00 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verifies if user gets error message entering invalid credentials 
+2026:05:21 13:53:00 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [] 
+2026:05:21 13:53:02 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners loginCSVTest Passed 
+2026:05:21 13:53:03 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners invalidLoginCredentials Passed 
+2026:05:21 13:53:14 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners verifySearchProduct 
+2026:05:21 13:53:14 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners Verify if the logged in user is able to search for a product and correct search results are displayed 
+2026:05:21 13:53:14 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [e2e, sanity] 
+2026:05:21 13:53:15 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners addAddress 
+2026:05:21 13:53:15 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners Adds new address 
+2026:05:21 13:53:15 [TestNG-test=Automation Practice-1] INFO com.ui.listeners.TestListeners [] 
+2026:05:21 13:53:16 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners verifySearchProduct Passed 
+2026:05:21 13:53:24 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners checkOut 
+2026:05:21 13:53:24 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners checkout 
+2026:05:21 13:53:24 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners [] 
+2026:05:21 13:53:31 [TestNG-test=Automation Practice-2] INFO com.ui.listeners.TestListeners checkOut Passed 
+2026:05:21 13:53:45 [TestNG-test=Automation Practice-1] ERROR com.ui.listeners.TestListeners addAddress Failed 
+2026:05:21 13:53:45 [TestNG-test=Automation Practice-1] ERROR com.ui.listeners.TestListeners Expected condition failed: waiting for element found by By.xpath: //a[@title='Add my first address'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Add my first address']"}.
+(tried for 30 seconds with 500 milliseconds interval)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63514}, goog:processID: 33552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63514/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a77853465829dee84350c35831a6de27 
+2026:05:21 13:53:45 [main] INFO com.ui.listeners.TestListeners Test suite ended 

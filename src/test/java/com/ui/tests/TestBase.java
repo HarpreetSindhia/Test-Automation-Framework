@@ -33,11 +33,7 @@ public class TestBase {
 		
 		this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
-		
-		/*String browserValue = (browser == null || browser.startsWith("${"))
-	            ? "CHROME"
-	            : browser.trim().toUpperCase();*/
-		
+
 		if(isLambdaTest)//Framework will run on cloud Lambda Test
 		{
 			lambdaDriver =	LambdaTestUtility.initializeLambdaTestSession(Browser.valueOf(browser.toUpperCase()), testName);

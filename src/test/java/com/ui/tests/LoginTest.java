@@ -1,28 +1,44 @@
 package com.ui.tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import static org.testng.Assert.assertEquals;
 
-public class LoginTest {
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+import com.ui.pojos.User;
 
-		WebDriver wd = new ChromeDriver();
+@Listeners(com.ui.listeners.TestListeners.class)
+public class LoginTest extends TestBase {
 
-		/*BrowserUtility browserUtility = new BrowserUtility(wd);
-		browserUtility.goToWebsite("https://automationpractice.techwithjatin.com/");
-		browserUtility.maximizeWindow();
 
-		By signInLinkLocator =	By.xpath("//a[contains(text(),'Sign in')]");
-		browserUtility.clickOn(signInLinkLocator);
+	@Test(description = "Verifies if the valid user is able to log in to the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
 
-		By emailTextBoxLocator =	By.id("email");
-		browserUtility.enterText(emailTextBoxLocator, "sapediw118@soppat.com");
+	public void loginTest(User user) {
 
-		By passwordTextBoxLocator =	By.id("passwd");
-		browserUtility.enterText(passwordTextBoxLocator, "password");
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+				user.getExpectedUserName());
 
-		By signInButtonLocator =	By.id("SubmitLogin");
-		browserUtility.clickOn(signInButtonLocator);*/
+	}
+
+	@Test(description = "Verifies if the valid user is able to log in to the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider",
+			retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+
+	public void loginCSVTest(User user) {
+
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+				user.getExpectedUserName());
+
+	}
+
+	@Test(description = "Verifies if the valid user is able to log in to the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider")
+
+	public void loginExcelTest(User user) {
+
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+				user.getExpectedUserName());
+		
 	}
 }
