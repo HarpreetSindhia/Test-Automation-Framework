@@ -44,9 +44,7 @@ public class TestBase {
 		{
 			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), true);//Framework will run on 
 			// local machine in headless mode
-		}
-		
-		
+		}	
 	}
 	
 	public BrowserUtility getInstance()
