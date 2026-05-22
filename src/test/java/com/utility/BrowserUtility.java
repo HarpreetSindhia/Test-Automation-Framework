@@ -78,7 +78,9 @@ public abstract class BrowserUtility {
 			if(isHeadless)
 			{
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--headless=Old");
+				options.addArguments("--headless=new");
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--window-size=1920,1080");
 				driver.set(new ChromeDriver(options));
 				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
