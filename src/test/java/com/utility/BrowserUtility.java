@@ -27,6 +27,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.constants.Browser;
 import com.constants.Size;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public abstract class BrowserUtility {
 
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
@@ -75,6 +77,7 @@ public abstract class BrowserUtility {
 	{
 		if(browserName == Browser.CHROME)
 		{
+			WebDriverManager.chromedriver().setup();
 			if(isHeadless)
 			{
 				ChromeOptions options = new ChromeOptions();
@@ -95,6 +98,7 @@ public abstract class BrowserUtility {
 		}
 		else if(browserName == Browser.EDGE)
 		{
+			WebDriverManager.edgedriver().setup();
 			if(isHeadless)
 			{
 				EdgeOptions options = new EdgeOptions();
@@ -111,6 +115,7 @@ public abstract class BrowserUtility {
 		}
 		else if(browserName == Browser.FIREFOX)
 		{
+			WebDriverManager.firefoxdriver().setup();
 			if(isHeadless)
 			{
 				FirefoxOptions options = new FirefoxOptions();
